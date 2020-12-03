@@ -1,12 +1,8 @@
-FROM debian:stretch AS base
+FROM python:3-buster AS base
 
 RUN apt-get update && apt-get install -y \
-    build-essential \
     cmake \
-    colordiff \
-    curl \
-    git \
-    python3
+    colordiff
 
 FROM base
 ARG VERSION=0.72.0
