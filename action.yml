@@ -1,13 +1,13 @@
-name: 'C++ Style Check'
+name: 'C++ Style Check (compiled)'
 description: 'Runs C++ style check with Uncrustify'
-author: 'coleaeason'
+author: 'dalpapa'
 inputs: 
   configPath:
     description: 'Alternate configuration file to use'
     required: false
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'docker://dalpapa/actions-uncrustify:0.72.0'
 branding:
     icon: 'edit-3'
     color: 'green'

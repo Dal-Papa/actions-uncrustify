@@ -23,7 +23,7 @@ jobs:
     - name: Checkout this commit
       uses: actions/checkout@v2
     - name: Run style checks
-      uses: coleaeason/actions-uncrustify@v1
+      uses: dalpapa/actions-uncrustify@v1
 ```
 
 Use a specific configuartion file via input: 
@@ -38,7 +38,7 @@ jobs:
     - name: Checkout this commit
       uses: actions/checkout@v2
     - name: Run style checks
-      uses: coleaeason/actions-uncrustify@v1
+      uses: dalpapa/actions-uncrustify@v1
       with: 
         configPath: 'myConfig.cfg'
 ```
